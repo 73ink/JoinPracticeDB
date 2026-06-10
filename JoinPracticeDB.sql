@@ -44,3 +44,12 @@ VALUES
 SELECT * FROM Classes;
 
 SELECT * FROM Students;
+
+-- Task 1: INNER JOIN
+-- Show student names with their class names
+
+SELECT Students.Name, Classes.ClassName
+FROM Students
+INNER JOIN Classes
+ON Students.ClassID = Classes.ClassID
+ORDER BY Students.Name;
