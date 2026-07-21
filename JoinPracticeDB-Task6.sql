@@ -27,3 +27,10 @@ VALUES
 (2, 'Medium'),
 (3, 'Large'),
 (4, 'Extra Large');
+
+-- Check Colors table
+SELECT * FROM Colors;
+
+-- Check Sizes table
+SELECT * FROM Sizes;
+
