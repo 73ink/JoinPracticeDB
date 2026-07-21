@@ -35,3 +35,10 @@ VALUES
 SELECT * FROM Products;
 
 SELECT * FROM Sales;
+
+-- Task 4 query: FULL OUTER JOIN 
+SELECT Products.ProductName, Sales.SaleID
+FROM Products
+FULL OUTER JOIN Sales
+ON Products.ProductID = Sales.ProductID
+ORDER BY Products.ProductName;
