@@ -21,4 +21,11 @@ VALUES
 
 -- review the table after inserting the data
 SELECT * FROM EmployeeManagers;
-
+-- Task 5 query: SELF JOIN (Table Joined with Itself) 
+SELECT 
+    e.EmployeeName,
+    m.EmployeeName AS ManagerName
+FROM EmployeeManagers e
+LEFT JOIN EmployeeManagers m
+ON e.ManagerID = m.EmployeeID
+ORDER BY e.EmployeeName;
