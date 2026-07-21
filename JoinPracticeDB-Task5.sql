@@ -18,3 +18,7 @@ VALUES
 (5, 'Ali Al Mukhaini', 2),
 (6, 'Mariam Al Zadjali', 3),
 (7, 'Khalid Al Abri', 3);
+
+-- review the table after inserting the data
+SELECT * FROM EmployeeManagers;
+
