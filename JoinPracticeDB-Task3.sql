@@ -36,3 +36,10 @@ VALUES
 SELECT * FROM Customers;
 
 SELECT * FROM Orders;
+
+-- Task 3: Query of  RIGHT JOIN 
+SELECT Customers.CustomerName, Orders.OrderID
+FROM Orders
+RIGHT JOIN Customers
+ON Orders.CustomerID = Customers.CustomerID
+ORDER BY Customers.CustomerName;
