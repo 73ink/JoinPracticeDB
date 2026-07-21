@@ -9,3 +9,12 @@ CREATE TABLE Teachers (
     TeacherID INT PRIMARY KEY,
     TeacherName VARCHAR(50)
 );
+
+-- Add TeacherID column to Classes table
+ALTER TABLE Classes
+ADD TeacherID INT;
+
+-- Add foreign key between Classes and Teachers
+ALTER TABLE Classes
+ADD FOREIGN KEY (TeacherID) REFERENCES Teachers(TeacherID);
+
