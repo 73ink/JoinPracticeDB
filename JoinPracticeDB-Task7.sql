@@ -47,3 +47,9 @@ WHERE ClassID = 104;
 UPDATE Classes
 SET TeacherID = 5
 WHERE ClassID = 105;
+
+-- Check Teachers table
+SELECT * FROM Teachers;
+
+-- Check Classes table after adding TeacherID
+SELECT * FROM Classes;
