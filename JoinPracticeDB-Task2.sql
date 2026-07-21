@@ -37,7 +37,10 @@ VALUES
 (107, 'Khalid Al Abri', NULL),
 (108, 'Noor Al Amri', NULL);
 
+-- Check tables that was created
+SELECT * FROM Departments;
 
+SELECT * FROM Employees;
 -- Task 2 query: LEFT JOIN
 SELECT Employees.EmployeeName, Departments.DepartmentName
 FROM Employees
