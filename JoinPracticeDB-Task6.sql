@@ -34,3 +34,9 @@ SELECT * FROM Colors;
 -- Check Sizes table
 SELECT * FROM Sizes;
 
+-- CROSS JOIN query
+-- This shows every color with every size
+SELECT Colors.ColorName, Sizes.SizeName
+FROM Colors
+CROSS JOIN Sizes
+ORDER BY Colors.ColorName, Sizes.SizeName;
