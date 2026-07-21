@@ -27,3 +27,23 @@ VALUES
 (4, 'Ms. Fatma Al Saadi'),
 (5, 'Mr. Yousuf Al Kindi');
 
+-- Assign teachers to existing classes
+UPDATE Classes
+SET TeacherID = 1
+WHERE ClassID = 100;
+
+UPDATE Classes
+SET TeacherID = 2
+WHERE ClassID = 102;
+
+UPDATE Classes
+SET TeacherID = 3
+WHERE ClassID = 103;
+
+UPDATE Classes
+SET TeacherID = 4
+WHERE ClassID = 104;
+
+UPDATE Classes
+SET TeacherID = 5
+WHERE ClassID = 105;
