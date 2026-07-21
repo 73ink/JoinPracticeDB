@@ -53,3 +53,13 @@ SELECT * FROM Teachers;
 
 -- Check Classes table after adding TeacherID
 SELECT * FROM Classes;
+
+-- INNER JOIN with multiple tables
+-- This shows student name, class name, and teacher name
+SELECT Students.Name, Classes.ClassName, Teachers.TeacherName
+FROM Students
+INNER JOIN Classes
+ON Students.ClassID = Classes.ClassID
+INNER JOIN Teachers
+ON Classes.TeacherID = Teachers.TeacherID
+ORDER BY Classes.ClassName;
