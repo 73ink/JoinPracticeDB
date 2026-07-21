@@ -31,3 +31,8 @@ VALUES
 (202, 1),
 (203, 2),
 (204, 3);
+
+-- check tables after data insert
+SELECT * FROM Customers;
+
+SELECT * FROM Orders;
