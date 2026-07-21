@@ -18,3 +18,12 @@ ADD TeacherID INT;
 ALTER TABLE Classes
 ADD FOREIGN KEY (TeacherID) REFERENCES Teachers(TeacherID);
 
+-- Add data into Teachers table
+INSERT INTO Teachers (TeacherID, TeacherName)
+VALUES
+(1, 'Mr. Ahmed Al Balushi'),
+(2, 'Ms. Sara Al Hinai'),
+(3, 'Mr. Khalid Al Abri'),
+(4, 'Ms. Fatma Al Saadi'),
+(5, 'Mr. Yousuf Al Kindi');
+
