@@ -39,3 +39,14 @@ VALUES
 (211, 3),
 (212, 4);
 
+-- Check Students table
+SELECT * FROM Students;
+
+-- Check Classes table
+SELECT * FROM Classes;
+
+-- Check Courses table
+SELECT * FROM Courses;
+
+-- Check Enrollments table
+SELECT * FROM Enrollments;
