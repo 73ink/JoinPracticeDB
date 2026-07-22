@@ -35,3 +35,9 @@ VALUES
 (106, 'Unknown History Book', NULL),
 (107, 'Mystery of Oman', NULL);
 
+-- Check Authors table
+SELECT * FROM Authors;
+
+-- Check Books table
+SELECT * FROM Books;
+
