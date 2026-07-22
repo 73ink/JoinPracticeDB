@@ -18,3 +18,10 @@ VALUES
 (1, 201, 25.500),
 (2, 202, 14.750),
 (3, 203, 30.000);
+
+-- Check Orders table
+SELECT * FROM Orders;
+
+-- Check Payments table
+SELECT * FROM Payments;
+
