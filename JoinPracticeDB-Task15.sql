@@ -50,3 +50,19 @@ SELECT * FROM Courses;
 
 -- Check Enrollments table
 SELECT * FROM Enrollments;
+
+-- Mixed JOIN query
+-- INNER JOIN connects students to their classes
+-- LEFT JOIN keeps students even if they have no course enrollment
+SELECT 
+    Students.Name,
+    Classes.ClassName,
+    Courses.CourseName
+FROM Students
+INNER JOIN Classes
+ON Students.ClassID = Classes.ClassID
+LEFT JOIN Enrollments
+ON Students.StudentID = Enrollments.StudentID
+LEFT JOIN Courses
+ON Enrollments.CourseID = Courses.CourseID
+ORDER BY Students.Name;
