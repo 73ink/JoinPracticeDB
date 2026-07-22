@@ -36,3 +36,9 @@ VALUES
 (2, 25),
 (3, 10),
 (6, 8);
+
+-- Check Inventory table
+SELECT * FROM Inventory;
+
+-- Check Sales table
+SELECT * FROM Sales;
