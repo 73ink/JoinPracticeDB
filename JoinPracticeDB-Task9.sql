@@ -11,3 +11,10 @@ CREATE TABLE Payments (
     FOREIGN KEY (OrderID) REFERENCES Orders(OrderID)
 );
 
+-- Add data into Payments table
+-- Some orders will not have payments
+INSERT INTO Payments (PaymentID, OrderID, Amount)
+VALUES
+(1, 201, 25.500),
+(2, 202, 14.750),
+(3, 203, 30.000);
