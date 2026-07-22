@@ -25,3 +25,12 @@ SELECT * FROM Orders;
 -- Check Payments table
 SELECT * FROM Payments;
 
+-- RIGHT JOIN query with filtering
+-- This shows all orders, including orders without payment
+SELECT Orders.OrderID, Payments.Amount
+FROM Payments
+RIGHT JOIN Orders
+ON Payments.OrderID = Orders.OrderID
+WHERE Payments.Amount IS NULL
+   OR Payments.Amount > 0
+ORDER BY Orders.OrderID;
