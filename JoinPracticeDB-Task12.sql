@@ -11,3 +11,20 @@ CREATE TABLE Stores (
     StoreName VARCHAR(50)
 );
 
+-- Add data into StoreProducts table
+INSERT INTO StoreProducts (ProductName)
+VALUES
+('Laptop'),
+('Mouse'),
+('Keyboard'),
+('Monitor'),
+('Printer');
+
+-- Add data into Stores table
+INSERT INTO Stores (StoreName)
+VALUES
+('Muscat Branch'),
+('Sohar Branch'),
+('Nizwa Branch'),
+('Salalah Branch');
+
