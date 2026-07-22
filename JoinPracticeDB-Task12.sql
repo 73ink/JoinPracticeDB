@@ -28,3 +28,8 @@ VALUES
 ('Nizwa Branch'),
 ('Salalah Branch');
 
+-- Check StoreProducts table
+SELECT * FROM StoreProducts;
+
+-- Check Stores table
+SELECT * FROM Stores;
