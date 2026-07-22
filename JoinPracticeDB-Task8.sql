@@ -41,3 +41,10 @@ SELECT * FROM Authors;
 -- Check Books table
 SELECT * FROM Books;
 
+-- LEFT JOIN query
+-- This shows all books, even books without authors
+SELECT Books.Title, Authors.AuthorName
+FROM Books
+LEFT JOIN Authors
+ON Books.AuthorID = Authors.AuthorID
+ORDER BY Books.Title;
