@@ -33,3 +33,10 @@ SELECT * FROM StoreProducts;
 
 -- Check Stores table
 SELECT * FROM Stores;
+
+-- CROSS JOIN query
+-- This shows every product available for every store
+SELECT StoreProducts.ProductName, Stores.StoreName
+FROM StoreProducts
+CROSS JOIN Stores
+ORDER BY Stores.StoreName, StoreProducts.ProductName;
