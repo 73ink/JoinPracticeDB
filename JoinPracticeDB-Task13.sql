@@ -26,3 +26,14 @@ SELECT * FROM Orders;
 
 -- Check OrderDetails table
 SELECT * FROM OrderDetails;
+
+-- INNER JOIN with SUM and GROUP BY
+-- This shows total quantity for each order
+SELECT 
+    Orders.OrderID,
+    SUM(OrderDetails.Quantity) AS TotalQuantity
+FROM Orders
+INNER JOIN OrderDetails
+ON Orders.OrderID = OrderDetails.OrderID
+GROUP BY Orders.OrderID
+ORDER BY TotalQuantity DESC;
