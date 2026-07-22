@@ -42,3 +42,10 @@ SELECT * FROM Inventory;
 
 -- Check Sales table
 SELECT * FROM Sales;
+
+-- FULL OUTER JOIN query
+SELECT Inventory.ProductName, Inventory.StockQty, Sales.SoldQty
+FROM Inventory
+FULL OUTER JOIN Sales
+ON Inventory.ProductID = Sales.ProductID
+ORDER BY Inventory.ProductName;
